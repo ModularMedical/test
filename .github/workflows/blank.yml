@@ -47,7 +47,4 @@ jobs:
     needs: [build]
     steps:
       - uses: actions/checkout@v3
-      - run: echo Publish
-      
-      - name: Test Reporter
       - uses: dorny/test-reporter@v1.5.0
