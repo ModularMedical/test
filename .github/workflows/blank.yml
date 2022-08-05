@@ -41,3 +41,10 @@ jobs:
           echo Add other actions to build,
           echo test, and deploy your project.
           echo ${{matrix.Plan}}
+
+  publish:
+    runs-on: self-hosted
+    needs: [build]
+    steps:
+      - uses: actions/checkout@v3
+      - run: echo Publish
