@@ -46,5 +46,6 @@ jobs:
     runs-on: self-hosted
     needs: [build]
     steps:
+      - name: Test Report
       - uses: actions/checkout@v3
       - uses: dorny/test-reporter@v1.5.0
